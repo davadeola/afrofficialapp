@@ -7,6 +7,7 @@ import { NavigationContainer, DefaultTheme } from "@react-navigation/native";
 
 import { useFonts } from "expo-font";
 import { Landing, Home } from "./screens";
+import Tabs from "./navigation/tabs";
 
 const theme = {
   ...DefaultTheme,
@@ -32,7 +33,7 @@ const App = () => {
         screenOptions={{ headerShown: false }}
         initialRouteName="Landing"
       >
-        <Stack.Screen component={Home} name="Home" />
+        <Stack.Screen component={Tabs} name="Home" />
         <Stack.Screen component={Landing} name="Landing" />
       </Stack.Navigator>
     </NavigationContainer>

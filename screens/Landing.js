@@ -10,14 +10,13 @@ import React from "react";
 
 import { COLORS, FONTS, SIZES, assets } from "../constants";
 
-const Landing = () => {
+const Landing = ({ navigation }) => {
   return (
     <SafeAreaView
       style={{
         flex: 1,
         backgroundColor: COLORS.primary,
         alignItems: "center",
-        justifyContent: "center",
       }}
     >
       <ImageBackground
@@ -25,19 +24,27 @@ const Landing = () => {
         resizeMode="cover"
         style={{
           flex: 1,
-          justifyContent: "center",
+          justifyContent: "space-between",
+          paddingVertical: SIZES.padding * 4,
         }}
       >
         <View
-          style={{ alignItems: "center", paddingHorizontal: SIZES.padding }}
+          style={{
+            alignItems: "center",
+            paddingHorizontal: SIZES.padding,
+            marginTop: SIZES.padding * 4,
+          }}
         >
-          <Image
-            source={assets.logo}
-            resizeMode="contain"
-            style={{
-              marginBottom: SIZES.padding,
-            }}
-          />
+          <Image source={assets.logo} resizeMode="contain" />
+        </View>
+
+        <View
+          style={{
+            alignItems: "center",
+            justifyContent: "flex-end",
+            paddingHorizontal: SIZES.padding,
+          }}
+        >
           <Text style={{ ...FONTS.body2, color: COLORS.secondary }}>
             Find the latest in African Fashion to suit your busy lifestyle
           </Text>
@@ -50,6 +57,7 @@ const Landing = () => {
               padding: SIZES.font,
               marginTop: SIZES.padding,
             }}
+            onPress={() => navigation.replace("Home")}
           >
             <Text style={{ ...FONTS.h2, color: COLORS.primary }}>Discover</Text>
           </TouchableOpacity>

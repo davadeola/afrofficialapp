@@ -79,4 +79,11 @@ const data = [
   },
 ];
 
+const categories = [
+  { name: "Women's", image: assets.womenImage },
+  { name: "Men's", image: assets.menImage },
+  { name: "Girls'", image: assets.girlImage },
+  { name: "Boys'", image: assets.boyImage },
+];
+
 export { data };
