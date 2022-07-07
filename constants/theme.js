@@ -15,6 +15,6 @@ export const SIZES = {
 };
 
 export const FONTS = {
-  bold: "PTSans-Bold",
-  regular: "PTSans-Regular",
+  bold: "PTSansBold",
+  regular: "PTSansRegular",
 };

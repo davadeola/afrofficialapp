@@ -18,7 +18,7 @@ const theme = {
 
 const Stack = createStackNavigator();
 
-export default function App() {
+const App = () => {
   const [loaded] = useFonts({
     PTSansBold: require("./assets/fonts/PTSans-Bold.ttf"),
     PTSansRegular: require("./assets/fonts/PTSans-Regular.ttf"),
@@ -37,13 +37,6 @@ export default function App() {
       </Stack.Navigator>
     </NavigationContainer>
   );
-}
+};
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});
+export default App;

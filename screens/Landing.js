@@ -1,11 +1,31 @@
-import { View, Text } from "react-native";
+import {
+  View,
+  Text,
+  TouchableOpacity,
+  SafeAreaView,
+  Image,
+} from "react-native";
 import React from "react";
+
+import { COLORS, FONTS, SIZES } from "../constants";
 
 const Landing = () => {
   return (
-    <View>
-      <Text>Landing is here</Text>
-    </View>
+    <SafeAreaView
+      style={{
+        flex: 1,
+      }}
+    >
+      <Text
+        style={{
+          alignSelf: "center",
+          fontFamily: FONTS.bold,
+          fontSize: SIZES.large,
+        }}
+      >
+        Landing is here
+      </Text>
+    </SafeAreaView>
   );
 };
 
