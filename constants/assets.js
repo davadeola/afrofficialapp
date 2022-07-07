@@ -8,6 +8,9 @@ import material2 from "../assets/images/material_2.png";
 import material3 from "../assets/images/material_3.png";
 import material4 from "../assets/images/material_4.png";
 
+import bgPattern from "../assets/images/bgPattern.png";
+import logo from "../assets/images/logo.png";
+
 import boyImage from "../assets/images/boy.png";
 import girlImage from "../assets/images/girl.png";
 import womenImage from "../assets/images/women.png";
@@ -21,6 +24,8 @@ import search from "../assets/icons/search.png";
 import home from "../assets/icons/home.png";
 
 export default {
+  logo,
+  bgPattern,
   design1,
   design2,
   design3,
